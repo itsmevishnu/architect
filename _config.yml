@@ -5,3 +5,13 @@ show_downloads: true
 google_analytics:
 theme: jekyll-theme-architect
 resume: assets/doc/vishnu.pdf
+#social media
+social:
+  facebook: https://www.facebook.com/vishnu.jayadhevan
+  stackoverflow: http://stackoverflow.com/users/4840468/vishnu-jayan
+  linkedin: https://www.linkedin.com/in/vishnujayadhevan
+  quara: https://www.quora.com/profile/Vishnu-Jayan-3
+#contact details
+contact:
+  skype: vishnu.jayadhevan
+  email: mailto@vishnujayan.in
