@@ -11,13 +11,15 @@
   {% endif %}
 
   <h2>Conact Me</h2>
-  <p><i class="fa fa-skype fa-3x wow bounceIn animated" style="visibility: visible;"></i> {{ site.contact.skype }}</p>
-  <p><i class="fa fa-envelope-o fa-3x wow bounceIn animated" data-wow-delay=".1s" style="visibility: visible; animation-delay: 0.1s;"></i> {{ site.contact.email }}</p>
+  <p><i class="fa fa-skype fa-fw wow bounceIn animated" style="visibility: visible;"></i> {{ site.contact.skype }}</p>
+  <p><i class="fa fa-envelope-o fa-fw wow bounceIn animated" data-wow-delay=".1s" style="visibility: visible; animation-delay: 0.1s;"></i> {{ site.contact.email }}</p>
   <h2>Around the Web</h2>
   <p>
-    <a href="{{ site.social.facebook }}" class="btn-social btn-outline"><i class="fa fa-2x  fa-facebook"></i></a>
-    <a href="{{ site.social.stackoverflow }}" class="btn-social btn-outline"><i class="fa fa-2x  fa-stack-overflow"></i></a>
-    <a href="{{ site.social.quara }}" class="btn-social btn-outline"><i class="fa fa-2x  fa-quora"></i></a>
-    <a href="{{site.social.linkedin }}" class="btn-social btn-outline"><i class="fa fa-2x  fa-linkedin"></i></a>
+    <ul class="list-inline">
+      <li><a href="{{ site.social.facebook }}" class="btn-social btn-outline"><i class="fa fa-2x  fa-facebook"></i></a></li>
+      <li><a href="{{ site.social.stackoverflow }}" class="btn-social btn-outline"><i class="fa fa-2x  fa-stack-overflow"></i></a></li>
+      <li><a href="{{ site.social.quara }}" class="btn-social btn-outline"><i class="fa fa-2x  fa-quora"></i></a></li>
+      <li><a href="{{site.social.linkedin }}" class="btn-social btn-outline"><i class="fa fa-2x  fa-linkedin"></i></a></li>
+    </ul>
   </p>
 </aside>
