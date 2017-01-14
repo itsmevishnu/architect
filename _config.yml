@@ -6,7 +6,7 @@ github:
   is_project_page: true
   url: https://github.com/itsmevishnu
   is_project_page: true
-google_analytics:
+google_analytics: UA-90372047-1
 theme: jekyll-theme-architect
 resume: assets/doc/vishnu.pdf
 # Social media links.
