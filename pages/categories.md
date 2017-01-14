@@ -7,6 +7,7 @@ permalink: /categories
 {% for category in site.categories %}
   {% capture category_name %}{{ category | first }}{% endcapture %}
   <h2>{{category_name}}</h2>
+  {{ site.categories.CATEGORY }}
   <ul>
     {% for posts in category %}
       {% for post in posts %}

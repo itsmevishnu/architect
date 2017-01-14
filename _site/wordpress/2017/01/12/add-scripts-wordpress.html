@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="Personal website of Vishnu Jayan">
+	  <meta name="keywords" content="Vishnu Jayan, Software Engineer, Wordpress tutoials, itsmevishnu, vishnujayan.in, learn wordpress, coding, angular js, learn, quick learner,Vishnu,vishnu,vishnu jayan,goal oriented,creative,young,software">
+	  <meta name="author" content="Vishnu Jayan">
+    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/assets/css/style.css?v=" media="screen" type="text/css">
+    <link rel="stylesheet" href="/assets/css/print.css" media="print" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" type="text/css">
+    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <title>Vishnu Jayan | A software Engineer.</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="inner">
+        <a href="/">
+          <h1>Vishnu Jayan</h1>
+        </a>
+        <h2>A software Engineer.</h2>
+        <h3>Resourceful professional with more than 2 year experience in PHP open source technologies and website design technologies.</h3>
+        
+          <a href="https://github.com/itsmevishnu" class="button"><small>View project on</small> GitHub</a>
+        
+        
+      </div>
+    </header>
+    <div class="menu-bar">
+      <nav>
+        <a href="/aboutme" class="button"><i class="fa fa-fw fa-user-o"></i>About Me</a>
+        <a href="/blogs" class="button"><i class="fa fa-fw fa-briefcase"></i>Blogs</a>
+      </nav>
+    </div>
+
+    <div id="content-wrapper">
+      <div class="inner clearfix">
+        <section id="main-content">
+          <h1>Adding script to Wordpress themes</h1>
+          <p>Welcome to my wordpress tutorials.Today let’s learn how to include external css and javascript files to wordpress theme or plugin.</p>
+
+<p>For this purpose there are some functions and hooks available in wordpress. Thanks for that. It reduces a lot of codes!. <code class="highlighter-rouge">admin_enqueue_scripts</code> is the hook used to add some extra css or js in our themes, or also in our plugins.
+Also, <code class="highlighter-rouge">wp_enqueue_script</code> and <code class="highlighter-rouge">wp_enqueue_style</code> are two functions used to add scripts and stylesheets into wordpress respectively.</p>
+
+<p>Let’s see how these are used to add scripts.</p>
+
+<figure class="highlight"><pre><code class="language-php" data-lang="php">function theme_admin_scripts() {
+
+  //Adding js script.
+
+	wp_enqueue_script( 'meta_box_script', get_template_directory_uri() . '/inc/js/theme_options_upload.js', array(), '1.0.0', true );
+
+  //Adding stylesheet.
+
+	wp_enqueue_style( 'theme_options', get_template_directory_uri() . '/inc/css/themeoptions.css' );
+}
+add_action( 'admin_enqueue_scripts', 'theme_admin_scripts' );</code></pre></figure>
+
+<p>The above example used to add <code class="highlighter-rouge">theme_options_upload.js</code> and <code class="highlighter-rouge">theme_options.css</code> to the wordpress. This code snippet can add to either in <code class="highlighter-rouge">functions.php</code> or in a new plugin file. No issue. Boths are right.</p>
+
+<p>Now lets check each functions seperately. <code class="highlighter-rouge">wp_enqueue_script</code> has 5 parameters. They are</p>
+
+<ul>
+  <li>
+    <p><strong>String handle</strong> - It’s a simple name to identify and refer the script in file. And it <em>should be unique</em>.</p>
+  </li>
+  <li>
+    <p><strong>String src</strong> - It’s the path of the file. I follow a general folder structure to keep my theme clean, like <code class="highlighter-rouge">/inc/js/</code> inside the theme folder.</p>
+  </li>
+  <li>
+    <p><strong>Array dependency</strong> - It’s an optional parameter, an array of dependencies of the current script.</p>
+  </li>
+  <li>
+    <p><strong>String / Bool / Null version</strong> - It denotes the version of the file that used for cache busting. If its <code class="highlighter-rouge">'1'</code>, then the version of file is 1.0. If it set to false, then the version of wordpress taken as file version and if set to null, the file has no version.</p>
+  </li>
+  <li>
+    <p><strong>Bool in_footer</strong> - It’s used to specify where the script will load. If it is <code class="highlighter-rouge">true</code>, then <code class="highlighter-rouge">&lt;script&gt;</code> tag will seen inside the <code class="highlighter-rouge">&lt;body&gt;</code> else in the <code class="highlighter-rouge">&lt;head&gt;</code>.</p>
+  </li>
+</ul>
+
+<p>Hope you understand the first function. Then lets us move on to next function, <code class="highlighter-rouge">wp_enqueue_style</code>. This has also same parameters except last one, the last parameter is replaced <code class="highlighter-rouge">in_footer</code>.</p>
+
+<ul>
+  <li><strong>String media</strong> - Here we specify the media  for which this stylesheet is defined, like <code class="highlighter-rouge">print</code>,<code class="highlighter-rouge">screen</code>, or media queries like <code class="highlighter-rouge">(max-width:360px)</code> or <code class="highlighter-rouge">(orientation: portrait)</code> etc, default value is <code class="highlighter-rouge">all</code>.</li>
+</ul>
+
+<p>Hope you understand the concepts and usage of these functions.</p>
+
+<p>Thank you..</p>
+
+        </section>
+
+      <aside id="sidebar">
+  
+    <h2>Categories</h2>
+    <ul>
+      
+      
+        <li><a href="/categories">Wordpress</a></li>
+      
+    </ul>
+  
+</aside>
+
+      </div>
+    </div>
+    
+  </body>
+</html>

@@ -8,7 +8,7 @@ permalink: /aboutme
 As a career enthusiast, I am a software engineer having experience of 2 years in PHP open
 source projects like wordpress, laravel and drupal. Also I have solid working experience in
 angular js and jekyll , I think these are my added advantages. Besides that I know a lot of
-technologies like GIT, AGILE,Bash, Golang,....
+technologies like GIT, SASS,Bash, Golang,....
 
 As a person, I am very interested to learn new things and apply that changes in everyday life. I
 am a very happy person and having a lot of good characters. Also I am very happy to help and
