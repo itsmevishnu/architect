@@ -1,4 +1,13 @@
 <aside id="sidebar">
+  {% if page.is_post %}
+    <h2>Categories</h2>
+    <ul>
+      {% for category in site.categories %}
+      {% capture category_name %}{{ category | first }}{% endcapture %}
+        <li><a href="/categories">{{category_name}}</a></li>
+      {% endfor %}
+    </ul>
+  {% else %}
   {% if site.show_downloads %}
     <a href="{{ site.resume }}" class="button">
       <small>Download</small>
@@ -22,4 +31,5 @@
       <li><a href="{{site.social.linkedin }}" class="btn-social btn-outline"><i class="fa fa-2x  fa-linkedin"></i></a></li>
     </ul>
   </p>
+  {% endif %}
 </aside>

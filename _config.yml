@@ -9,13 +9,21 @@ github:
 google_analytics:
 theme: jekyll-theme-architect
 resume: assets/doc/vishnu.pdf
-#social media
+# Social media links.
 social:
   facebook: https://www.facebook.com/vishnu.jayadhevan
   stackoverflow: http://stackoverflow.com/users/4840468/vishnu-jayan
   linkedin: https://www.linkedin.com/in/vishnujayadhevan
   quara: https://www.quora.com/profile/Vishnu-Jayan-3
-#contact details
+# Contact details.
 contact:
   skype: vishnu.jayadhevan
   email: mailto@vishnujayan.in
+# Default values.
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      is_post: true

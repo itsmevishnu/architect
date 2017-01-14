@@ -1,6 +1,5 @@
 ---
 layout: default
-title: About Me |Vishnu Jayan
+title: About Me
 permalink: /aboutme
 ---
-# About me

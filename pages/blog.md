@@ -1,6 +1,12 @@
 ---
 layout: default
-title: Blogs|Vishnu Jayan
+title: Blogs
 permalink: /blogs
 ---
-# Blog Categories
+
+{% for post in site.posts%}
+
+## [{{ post.title}}]({{ post.url }})
+
+  {{ post.excerpt }}
+{% endfor%}
