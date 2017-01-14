@@ -996,3 +996,31 @@ blockquote {
   font-size: 1.6em;
   padding: 10px;
   border-radius: 10px; }
+
+.center-image {
+  margin: 0 auto;
+  display: block;
+  border: 1px solid #2879d0;
+  border-radius: 10px;
+  text-align: center;
+  width: 100px; }
+
+h1::before {
+  color: #2879d0 !important;
+  content: "|" !important;
+  font-weight: bolder !important; }
+
+h2::before {
+  color: #2879d0 !important;
+  content: "|" !important;
+  font-weight: bold !important; }
+
+h3::before {
+  color: #2879d0 !important;
+  content: "|" !important;
+  font-weight: normal !important; }
+
+h4::before {
+  color: #2879d0 !important;
+  content: "|" !important;
+  font-weight: lighter !important; }
