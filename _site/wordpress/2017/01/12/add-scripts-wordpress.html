@@ -51,17 +51,18 @@ Also, <code class="highlighter-rouge">wp_enqueue_script</code> and <code class="
 
 <p>Let’s see how these are used to add scripts.</p>
 
-<figure class="highlight"><pre><code class="language-php" data-lang="php">function theme_admin_scripts() {
+<figure class="highlight"><pre><code class="language-php" data-lang="php"><span class="cp">&lt;?php</span> 
+<span class="k">function</span> <span class="nf">theme_admin_scripts</span><span class="p">()</span> <span class="p">{</span>
 
-  //Adding js script.
+  <span class="c1">//Adding js script.
+</span>
+	<span class="nx">wp_enqueue_script</span><span class="p">(</span> <span class="s1">'meta_box_script'</span><span class="p">,</span> <span class="nx">get_template_directory_uri</span><span class="p">()</span> <span class="o">.</span> <span class="s1">'/inc/js/theme_options_upload.js'</span><span class="p">,</span> <span class="k">array</span><span class="p">(),</span> <span class="s1">'1.0.0'</span><span class="p">,</span> <span class="kc">true</span> <span class="p">);</span>
 
-	wp_enqueue_script( 'meta_box_script', get_template_directory_uri() . '/inc/js/theme_options_upload.js', array(), '1.0.0', true );
-
-  //Adding stylesheet.
-
-	wp_enqueue_style( 'theme_options', get_template_directory_uri() . '/inc/css/themeoptions.css' );
-}
-add_action( 'admin_enqueue_scripts', 'theme_admin_scripts' );</code></pre></figure>
+  <span class="c1">//Adding stylesheet.
+</span>
+	<span class="nx">wp_enqueue_style</span><span class="p">(</span> <span class="s1">'theme_options'</span><span class="p">,</span> <span class="nx">get_template_directory_uri</span><span class="p">()</span> <span class="o">.</span> <span class="s1">'/inc/css/themeoptions.css'</span> <span class="p">);</span>
+<span class="p">}</span>
+<span class="nx">add_action</span><span class="p">(</span> <span class="s1">'admin_enqueue_scripts'</span><span class="p">,</span> <span class="s1">'theme_admin_scripts'</span> <span class="p">);</span></code></pre></figure>
 
 <p>The above example used to add <code class="highlighter-rouge">theme_options_upload.js</code> and <code class="highlighter-rouge">theme_options.css</code> to the wordpress. This code snippet can add to either in <code class="highlighter-rouge">functions.php</code> or in a new plugin file. No issue. Boths are right.</p>
 
@@ -103,7 +104,7 @@ add_action( 'admin_enqueue_scripts', 'theme_admin_scripts' );</code></pre></figu
     <ul>
       
       
-        <li><a href="/categories">Wordpress</a></li>
+        <li><a href="/categories">wordpress</a></li>
       
     </ul>
   
@@ -111,6 +112,17 @@ add_action( 'admin_enqueue_scripts', 'theme_admin_scripts' );</code></pre></figu
 
       </div>
     </div>
+    
+      <script type="text/javascript">
+        var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+        document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+      </script>
+      <script type="text/javascript">
+        try {
+          var pageTracker = _gat._getTracker("UA-90372047-1");
+        pageTracker._trackPageview();
+        } catch(err) {}
+      </script>
     
   </body>
 </html>

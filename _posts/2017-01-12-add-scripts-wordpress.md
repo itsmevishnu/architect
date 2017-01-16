@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Adding script to Wordpress themes
-categories: Wordpress
+categories: wordpress
 ---
 
 Welcome to my wordpress tutorials.Today let's learn how to include external css and javascript files to wordpress theme or plugin.
@@ -12,7 +12,7 @@ Also, `wp_enqueue_script` and `wp_enqueue_style` are two functions used to add s
 Let's see how these are used to add scripts.
 
 {% highlight php %}
-
+<?php 
 function theme_admin_scripts() {
 
   //Adding js script.
