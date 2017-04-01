@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Adding script to Wordpress themes
-categories: wordpress
+categories: Wordpress
 ---
 
 Welcome to my wordpress tutorials.Today let's learn how to include external css and javascript files to wordpress theme or plugin.

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Custom role creation in wordpress.
-categories: wordpress
+categories: Wordpress
 ---
 Welcome to my wordpress tutorials and tips. Today let's learn how we can create a custom role in wordpress with out any plugins.
 
