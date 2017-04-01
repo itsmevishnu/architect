@@ -5,13 +5,13 @@ categories: Wordpress
 ---
 I am a php developer specialised in content management systems, mostly WordPress, drupal and Jekyll. I am not very much expert as others, with in the short experience of two years, I did some very good projects in PHP open source CMSs as well as Github’s jekyll. Among these, I love WordPress very much and I strongly advise to learn WordPress if you will like to work with a strong CMS or make a business based on CMS.
 
-##Before going to deep, let us look what is a CMS?
+## Before going to deep, let us look what is a CMS?
 
 Content management Systems simply we called CMS, is actually a tool that used to make a beautiful site or a blog with limited or no coding. Your hand become clean and you can make a nice looking site! No need to change or add the HTML, CSS, JS etc for adding new content, new post, new feed and more. You want to know a little bit about the CMS concepts.
 
 So comes to Wordpress, it is a free and opensource CMS platform in PHP. Thanks to Matt Mullenweg, the creator of WordPress for this super easy tool. Now, on the world wide web, more than 26.4%, is created by Wordpress!
 
-##Why wordpress become so popular?
+## Why wordpress become so popular?
 
 The main credits go to themes, plugins and simplicity of the admin panel. There are thousands of free themes and plugins available for Wordpress. The theme is used to change the appearance of the site, like how the header and footer will show, how the menu will show and more. Each and every part of the WordPress site is customizable,
 
