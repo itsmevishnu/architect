@@ -23,4 +23,6 @@ The second thing is simple coding. If we know the basic PHP and MySQL, we can ea
 
 I found difficulties when I started to learn drupal. I found the answers only in their forum, and some of them are not completed, and little confusing. Also, the major issue with drupal is, when their major version changes, that means from 6.x.x to 7.x.x. And to 8.x.x there was a huge change in coding, hooks and almost every where.
 
-These are the most things I feel WordPress good at. And I love WordPress and their philosophy. Happy coding...
+These are the most things I feel WordPress good at. And I love WordPress and their philosophy. 
+
+Happy coding.
